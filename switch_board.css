@@ -1,0 +1,61 @@
+body {
+  width: 960px;
+  height: 960px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: 20px auto;
+}
+
+.switch-box {
+  margin: 0 auto;
+  width: 20%;
+  height: 25%;
+  background-color: burlywood;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1em 1em 2em black, 1em 1em 1em black;
+}
+
+.switch {
+  width: 33%;
+  height: 55%;
+  border-radius: 1em;
+  background-color: hsla( 30,80%,5%,1.0 );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: red;
+  text-shadow: 0 0.1em 0.7em red;
+}
+
+.switch-off:target {
+  box-shadow: 0 2.1em 0.7em hsla( 0,0%,13%,1.0 );
+}
+
+.switch-on:target {
+  box-shadow: 0 -2.1em 0.7em hsla( 0,0%,13%,1.0 );
+}
+
+.switch-off:target a,
+.switch-on:target a {
+  color: whitesmoke;
+  text-shadow: 0 0.1em 0.7em black;
+}
+
+.line {
+  width: 100%;
+  border:1px solid hsla(0,0%,100%,0.2);
+}
